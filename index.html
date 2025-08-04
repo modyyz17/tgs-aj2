@@ -2,75 +2,123 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Perkenalan Diri</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biodata Imut Maudi</title>
   <style>
+    /* ==== Style Umum ==== */
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #e9f5ff;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ffe0f0, #d0f0ff);
       margin: 0;
       padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
     }
 
     header {
-      background-color: #0077b6;
-      color: white;
-      padding: 30px 0;
+      background-color: #ff99c8;
+      width: 100%;
       text-align: center;
-    }
-
-    main {
-      max-width: 800px;
-      margin: 40px auto;
-      background-color: #ffffff;
-      padding: 30px;
-      border-radius: 10px;
+      padding: 25px 0;
+      color: white;
+      font-size: 28px;
+      font-weight: bold;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
 
-    img {
-      display: block;
-      margin: 0 auto 20px;
-      border-radius: 100px;
-      width: 150px;
-      height: 150px;
-      object-fit: cover;
+    /* ==== Kartu Biodata ==== */
+    .container {
+      max-width: 350px;
+      background: #fff;
+      margin: 40px auto;
+      padding: 30px 20px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-    h2 {
-      color: #0077b6;
-      text-align: center;
+    .container:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    /* ==== Foto Profil ==== */
+    img {
+      display: block;
+      margin: 0 auto 15px;
+      border-radius: 50%;
+      width: 130px;
+      height: 130px;
+      object-fit: cover;
+      border: 4px solid #ffb6d9;
+    }
+
+    /* ==== Teks Biodata ==== */
+    h1 {
+      color: #ff5d9e;
+      margin-bottom: 15px;
+      font-size: 24px;
     }
 
     p {
-      font-size: 16px;
-      line-height: 1.6;
-      text-align: center;
+      font-size: 15px;
+      margin: 8px 0;
+      color: #444;
     }
 
+    strong {
+      color: #ff7bb2;
+    }
+
+    /* ==== Footer ==== */
     footer {
       text-align: center;
       padding: 20px;
-      color: #777;
+      color: #888;
+      font-size: 14px;
+      margin-top: auto;
+    }
+
+    /* ==== Responsif untuk HP ==== */
+    @media (max-width: 480px) {
+      .container {
+        max-width: 90%;
+        padding: 25px 15px;
+      }
+
+      h1 {
+        font-size: 20px;
+      }
+
+      p {
+        font-size: 14px;
+      }
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Halo, Saya Maudi!</h1>
+    🌸 Halo, Aku Maudi! 🌸
   </header>
 
-  <main>
+  <div class="container">
     <img src="https://via.placeholder.com/150" alt="Foto Maudi">
-    <h2>Tentang Saya</h2>
-    <p>Nama lengkap saya Maudina Mey Nur Hidayah, bisa dipanggil Maudi. Saya adalah siswi SMK yang tertarik dengan dunia seni dan bisnis.</p>
-    <p>Saya punya hobi menari, mendengarkan musik, dan traveling. Cita-cita saya adalah menjadi pengusaha sukses yang bisa mandiri dan membantu orang lain.</p>
-    <p>Saya juga sedang belajar membuat berbagai proyek, salah satunya adalah website seperti ini. Terima kasih sudah mampir!</p>
-  </main>
+    <h1>Biodata Diri</h1>
+    <p><strong>Nama:</strong> Maudina Mey Nur Hidayah</p>
+    <p><strong>Kelas:</strong> 12</p>
+    <p><strong>Sekolah:</strong> SMK Telkom Sidoarjo</p>
+    <p><strong>Jurusan:</strong> Sistem Informasi Jaringan dan Aplikasi (SIJA)</p>
+    <p><strong>Cita-cita:</strong> Menjadi seorang pebisnis dan penari!</p>
+    <p>💖 Hobi: Menari, dengar musik, traveling.  
+       💼 Cita-cita: Jadi pengusaha sukses yang mandiri dan bisa bantu orang lain!</p>
+  </div>
 
   <footer>
-    &copy; 2025 Maudi | Dibuat dengan ❤️ dan HTML
+    &copy; Maudina mey nur hidayah
   </footer>
 
 </body>
